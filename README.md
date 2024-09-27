@@ -20,13 +20,14 @@ Erlangen, Germany*,†,‡,+
 ## Training
 [Hand Screw Clamp](https://zenodo.org/records/11206073)
 
-[Corner Clamp Part 2 - Geared Caliper Base](https://zenodo.org/records/11194303)
 
 [Training Set - NanoVise part 2](https://zenodo.org/records/11194439)
 
 [Training Set - NanoVise part 1](https://zenodo.org/records/11194431)
 
 [Training Set - Corner Clamp Part 1](https://zenodo.org/records/11194297)
+
+[Training Set - Corner Clamp Part 2 - Geared Caliper Base](https://zenodo.org/records/11194303)
 
 ## TODO
 - upload code --> soon
