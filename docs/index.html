@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>ASDF: Assembly State Detection Utilizing Late Fusion by Integrating 6D
+Pose Estimation</title>
+    <meta content="ASDF: Assembly State Detection Utilizing Late Fusion by Integrating 6D
+Pose Estimation" name="description"/>
+    <meta content="ASDF: Assembly State Detection Utilizing Late Fusion by Integrating 6D
+Pose Estimation"
+          property="og:title"/>
+    <meta content="6D pose estimation" name="description"/>
+    <meta content="Computer Vision"
+          name="description"/>
+    <meta content="state detection"
+          name="description"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <style>
+        a:link {
+            text-decoration: none;
+            color: darkred;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: darkred;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: darkred;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+<div class="section">
+    <br>
+    <br>
+    <div class="container">
+        <div class="text-center">
+            <h1 class="nerf_title_v2">    <meta content="Computer Vision"
+          name="description"/>ASDF: Assembly State Detection Utilizing Late Fusion by Integrating 6D Pose Estimation</h1>
+
+            <br>
+
+            <h5 class=""></h5>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="https://hannahhaensen.github.io" target="_blank" class="authors_a">
+                        Hannah Schieber,
+                        <sup>1,2</sup></a>
+                    <a href="https://scholar.google.com/citations?user=XnnWzYgAAAAJ&hl=de&oi=ao" target="_blank" class="authors_a">
+                        Shiyu Li
+                        <sup>1,2</sup>
+                    </a>
+                    Niklas Corell
+                    <sup>2</sup>
+
+                    Philipp Beckerle
+                    <sup>2</sup>
+
+                    <a href="https://scholar.google.com/citations?user=hNhoihUAAAAJ&hl=de&oi=ao" target="_blank" class="authors_a">
+                        Julian Kreimeier,
+                        <sup>1</sup>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=YonEz-cAAAAJ&hl=de&oi=ao" target="_blank" class="authors_a">
+                        Daniel Roth<sup>1</sup>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="nerf_mobile_inst">
+                        <span class="text-span_nerf">1 </span>Technical University of Munich, School of Medicine
+                        and
+                        Health, Department Clinical Medicine, Klinikum rechts der Isar, Orthopedics and Sports
+                        Orthopedics, Munich, Germany
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="nerf_mobile_inst">
+                        <span class="text-span_nerf">2 </span>
+                        Friedrich-Alexander-Universität Erlangen-Nürnberg,
+                        Erlangen, Germany
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="https://arxiv.org/pdf/2403.16400.pdf">
+                        <img src="images/paper.png" style="width: 100px; border: black 1px solid;">
+                    </a>
+                    <p>Preprint</p>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://zenodo.org/records/11188134">
+                        <img src="images/dataset.png" style="width: 100px;">
+                    </a>
+                    <p>Dataset</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row" style="text-align: center; justify-content: center">
+                <img src="images/teaser.png" style="width: 50%; text-align: center">
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h5>
+                    Abstract
+                </h5>
+                <p style="text-align: left">
+                    In medical and industrial domains, providing guidance for assembly processes is critical to ensure efficiency and safety. Errors in assembly can lead to significant consequences such as extended surgery times, and prolonged manufacturing or maintenance times in industry. Assembly scenarios can benefit from in-situ Augmented Reality (AR) visualization to provide guidance, reduce assembly times and minimize errors. To enable in-situ visualization 6D pose
+estimation can be leveraged. Existing 6D pose estimation techniques primarily focus on individual objects and static captures. However, assembly scenarios have various dynamics including occlusion during assembly and dynamics in the assembly objects appearance.
+Existing work, combining object detection/6D pose estimation and assembly state detection focuses either on pure deep learning-based approaches, or limit the assembly state detection to building blocks. To address the challenges of 6D pose estimation in combination with assembly state detection, our approach ASDF builds upon the strengths of YOLOv8, a real-time capable object detection framework. We extend this framework, refine the object pose and fuse
+pose knowledge with network-detected pose information. Utilizing our late fusion in our Pose2State module results in refined 6D pose estimation and assembly state detection. By combining both pose and state information, our Pose2State module predicts the final assembly state with precision. Our evaluation on our ASDF dataset
+shows that our Pose2State module leads to an improved assembly state detection and that the improvement of the assembly state further leads to a more robust 6D pose estimation. Moreover, on the GBOT dataset, we outperform the pure deep learning-based network, and even outperform the hybrid and pure tracking-based approaches.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                    <h5>Results ASDF Dataset</h5>
+                    <img src="images/asdf.png" style="width: 100%;">
+            </div>
+            <div class="col-md-6">
+               <h5>Results GBOT Dataset</h5>
+                    <img src="images/gbot.png" style="width: 100%;">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="grey-heading_nerf">
+                    Citation</h5>
+                <p class="" style="text-align: left; background: aliceblue; margin: 20px; padding: 20px;">
+                    @misc{schieber2024asdf,<br>
+                            &nbsp;&nbsp;title={ASDF: Assembly State Detection Utilizing Late Fusion by Integrating 6D Pose Estimation},<br>
+                            &nbsp;&nbsp;author={Hannah Schieber and Shiyu Li and Niklas Corell and Philipp Beckerle and Julian Kreimeier and Daniel Roth},<br>
+                            &nbsp;&nbsp;year={2024},<br>
+                           &nbsp;&nbsp; eprint={2403.16400},<br>
+                            &nbsp;&nbsp;archivePrefix={arXiv},<br>
+                            &nbsp;&nbsp;primaryClass={cs.CV}<br>
+                    }
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <p>We gratefully acknowledge funding for this study by d.hip campus and Bundesministerium für Bildung und Forschung (BMBF) with the grant number 16SV8973.</p>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+
+</body>
+</html>
