@@ -29,6 +29,7 @@ Erlangen, Germany*,†,‡,+
 
 [Training Set - Corner Clamp Part 2 - Geared Caliper Base](https://zenodo.org/records/11194303)
 
-## TODO
-- upload code --> soon
-- make complete dataset publicly available: Preview --> [ASDF Evaluation Dataset + Corner Clamp Base](https://zenodo.org/records/11188134)
+The yolo part of this work is from Ultralytics
+
+YOLO is under the following license:
+- **AGPL-3.0 License**: This [OSI-approved](https://opensource.org/licenses/) open-source license is ideal for students and enthusiasts, promoting open collaboration and knowledge sharing. See the [LICENSE](https://github.com/ultralytics/ultralytics/blob/main/LICENSE) file for more details.
